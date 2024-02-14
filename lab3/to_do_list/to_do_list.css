@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    height: 20px;
+    color:grey;
+    padding: 15px;
+    padding-left: 50px;
+}
+
+header p {
+    margin: 0;
+}
+
+#main {
+    text-align: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    font: sans-serif;
+}
+
+h1 {
+    text-align: left;
+    font-weight: 400;
+}
+
+#adding{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+#new-task {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 500px;
+    height: 35px;
+    padding-left: 15px;
+}
+
+#add {
+    background-color:dodgerblue;
+    color:white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 37px;
+    font-size: 17px;
+}
+
+.task {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    flex: row;
+    padding: 15px;
+}
+
+.task-checkbox {
+    float: left;
+    width: 15px;
+
+}
+label {
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    margin-left: 32px;
+}
+.delete-button {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    background-image: url('trash.png');
+    background-size: cover;
+    border:none;
+}
