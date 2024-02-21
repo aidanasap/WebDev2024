@@ -1,0 +1,27 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <img src="{{ product.img_url }}" class="images" />
+  <h4>{{ product.price }}тг</h4>
+  <p>{{ product.description }}</p>
+  <p>Рейтинг: {{ product.rating }}</p>
+
+  <button type="button" (click)="addToCart(product)">Купить</button>
+  <a href="{{ product.url }}" target="_blank">
+    <button type="button" id="kaspi">Kaspi</button>
+  </a>
+  <!--css of ngx-sharebuttons library-->
+  <!--https://dev.to/rodrigokamada/adding-the-social-media-share-buttons-component-to-an-angular-application-320h-->
+  <div class="container-fluid py-3">
+    <share-buttons
+      theme="modern-dark"
+      [include]="['copy', 'telegram', 'whatsapp']"
+      [showIcon]="true"
+      [showText]="true"
+      url="{{ product.url }}"
+      class="pt-5"
+    >
+    </share-buttons>
+  </div>
+</div>

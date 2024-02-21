@@ -1,0 +1,13 @@
+/*images of products*/
+.images {
+  max-width: 300px;
+  max-height: 300px;
+}
+/*images of kaspi button*/
+#kaspi {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  background-color: #ff0000;
+  margin-bottom: 30px;
+}
