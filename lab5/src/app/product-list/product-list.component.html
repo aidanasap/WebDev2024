@@ -1,0 +1,12 @@
+
+<h2>Products</h2>
+<button type="button" (click)="onSelect('apple')">Apple</button>
+<button type="button" (click)="onSelect('samsung')"
+style="margin-left: 20px;">Samsung</button>
+<button type="button" (click)="onSelect('xiaomi')"
+style="margin-left: 20px;">Xiaomi</button>
+<button type="button" (click)="onSelect('huawei')"
+style="margin-left: 20px;">Huawei</button>
+
+
+<app-app-item [selectedProduct]="selectedProduct"></app-app-item>
