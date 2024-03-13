@@ -1,0 +1,35 @@
+<div *ngIf="loaded" id="detail">
+  <div>
+    <h2>Details</h2>
+
+    <h4>ID : {{album.id}}</h4>
+    <h4>UserID : {{album.userId}}</h4>
+    <h4>Title : {{album.title}}</h4>
+  </div>
+
+  <div class="return-back">
+    <a routerLink="/albums">
+      &#8592; Back
+    </a>
+  </div>
+</div>
+
+<div *ngIf="loaded">
+  <div class="photos">
+    <a class="photos-word" [routerLink]="['/albums', album.id, 'photos']">See Photos</a>
+  </div>
+
+  <button id="edit" *ngIf="!edit" (click)="edit=!edit" >Edit</button>
+
+  <div *ngIf="edit" id="edit-form">
+    <label for="id">ID : </label>
+    <input type="text" id="id" [(ngModel)]="editableAlbum.id" required>
+
+    <label for="title">Title : </label>
+    <input type="text" id="title" [(ngModel)]="editableAlbum.title" required>
+
+    <button id="save" (click)="saveChanges()">Save Changes</button>
+  </div>
+</div>
+
+<h3 *ngIf="!loaded">Album details are loading...</h3>

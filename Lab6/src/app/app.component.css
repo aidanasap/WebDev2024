@@ -1,0 +1,24 @@
+#top-bar{
+  background-color: #FCEDDA;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 5px 5px;
+  box-shadow: 2px 2px rgb(219, 219, 219);
+}
+
+.menu{
+  margin-right: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black ;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+a:hover{
+  text-decoration: underline;
+  color:  #317773;
+}

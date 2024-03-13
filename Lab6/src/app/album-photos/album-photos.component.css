@@ -1,0 +1,14 @@
+.door{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.door:hover{
+  transform: scale(1.1);
+}
+
+.page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
